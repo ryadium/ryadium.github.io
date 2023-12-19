@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2023-12-19 14:49",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://ryadium.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://ryadium.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": true,
+    "usedWebp": true,
+    "favicon": false,
+    "mbrsiteDomain": "lu6oaxiweg",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Raydium Wallet™ | Home Official Site",
+        "meta_descr": "Raydium enables the permissionless creation of liquidity pools and farms so projects can launch and bootstrap liquidity in a decentralized manner.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://raydium.io/\"><img src=\"@PROJECT_PATH@/assets/images/raydium.png\" alt=\"Raydium Wallet\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYSkvBiySL",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://raydium.io/\" class=\"text-primary\">Raydium Wallet</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://ryadium.github.io/\" class=\"text-primary\">Raydium Wallet</a>: Navigating the DeFi Landscape with Innovation</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">The decentralized finance (DeFi) space has witnessed an unprecedented surge, with blockchain enthusiasts exploring novel ways to interact with financial services. Amidst this transformative wave, the Solana blockchain has emerged as a frontrunner, providing a robust foundation for decentralized applications (DApps) and DeFi protocols. At the heart of this movement lies Raydium, a decentralized liquidity protocol, and its associated wallet. In this article, we delve into the intricacies of the Raydium Wallet, examining its features, the integration with the Raydium protocol, security measures, and its potential impact on the decentralized finance landscape.\n<br>\n<br>The Genesis of Raydium Wallet\n<br>\n<br>Raydium Wallet is an integral part of the broader Raydium ecosystem, which aims to provide decentralized liquidity on the Solana blockchain. Launched to complement the Raydium protocol, the Raydium Wallet is designed to offer users a seamless and secure interface for engaging with DeFi applications, decentralized exchanges, and liquidity pools within the Solana ecosystem. As DeFi gains momentum, Raydium Wallet stands out as a pioneering solution for users seeking efficient and user-friendly access to decentralized finance services.\n<br>\n<br>User-Centric Interface\n<br>\n<br>Raydium Wallet places a strong emphasis on user experience, featuring an intuitive and user-friendly interface. The wallet is designed to cater to users with varying levels of experience in the crypto space. The onboarding process is streamlined, and the dashboard provides a clear overview of the user's portfolio, including assets, liquidity positions, and staking activities. This user-centric approach positions Raydium Wallet as an accessible entry point for both novices and experienced DeFi participants.\n<br>\n<br>Integration with Raydium Protocol\n<br>\n<br>At the core of Raydium Wallet's functionality lies its integration with the Raydium protocol. Raydium serves as a decentralized exchange (DEX) and an automated market maker (AMM), allowing users to trade assets, provide liquidity, and stake tokens seamlessly. The wallet acts as a gateway to these services, enabling users to interact with the Raydium protocol directly from the wallet interface. This integration enhances the user experience by consolidating various DeFi activities into a unified platform.\n<br>\n<br>Liquidity Provision and Staking\n<br>\n<br>Raydium Wallet is not merely a storage solution but a versatile platform that facilitates liquidity provision and staking. Users can participate in liquidity pools by depositing tokens, earning fees and additional rewards in the process. The wallet also supports staking activities, allowing users to delegate tokens to the Raydium protocol and earn staking rewards. This dual functionality makes Raydium Wallet a comprehensive tool for users looking to actively participate in the DeFi ecosystem.\n<br>\n<br>Security Measures\n<br>\n<br>Recognizing the paramount importance of security in the DeFi landscape, Raydium Wallet incorporates robust security measures. The wallet operates on a non-custodial model, ensuring that users retain control of their private keys. This decentralized approach mitigates the risk of centralized vulnerabilities, providing users with a higher level of control over their assets. Additionally, Raydium Wallet employs encryption protocols to secure user data and transactions, reinforcing its commitment to user security.\n<br>\n<br>Cross-Chain Compatibility\n<br>\n<br>Raydium Wallet's forward-thinking approach extends to its cross-chain compatibility. While initially built on the Solana blockchain, Raydium has plans to expand its ecosystem by incorporating support for other blockchains. This cross-chain compatibility not only broadens the scope of assets available to users but also positions Raydium Wallet as a versatile tool for those exploring opportunities beyond the Solana network.\n<br>\n<br>Community Engagement and Future Developments\n<br>\n<br>The success of Raydium Wallet is intricately tied to its active and engaged community. Regular updates, community-driven feedback loops, and transparent communication contribute to the wallet's continuous improvement. The Raydium team is committed to ongoing development, with plans to introduce new features, integrations, and optimizations to enhance the overall user experience and further solidify Raydium's position in the DeFi space.\n<br>\n<br>Looking Ahead: Raydium's Impact on DeFi\n<br>\n<br>As the decentralized finance landscape continues to evolve, Raydium Wallet emerges as a pivotal player, providing users with a gateway to the innovative and dynamic services offered by the Raydium protocol. With its commitment to user-centric design, security, and integration with the broader DeFi ecosystem, Raydium Wallet is poised to play a crucial role in shaping the future of decentralized finance on the Solana blockchain.\n<br>\n<br>Conclusion\n<br>\n<br>In the fast-paced world of decentralized finance, Raydium Wallet stands as a beacon of innovation, offering users a seamless and secure entry point into the Raydium ecosystem. With its user-centric interface, integration with the Raydium protocol, robust security measures, and commitment to community engagement, Raydium Wallet encapsulates the essence of DeFi accessibility. As users navigate the complexities of decentralized finance, Raydium Wallet emerges as a pioneering solution, empowering individuals to participate actively in the transformative landscape of blockchain-based financial services.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYSkwzjuET",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
